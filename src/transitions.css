@@ -1,0 +1,18 @@
+/* Each world has its own entrance grammar; native view transitions retain navigation. */
+.site-header{view-transition-name:kitchen-navigation}
+::view-transition-old(kitchen-navigation),::view-transition-new(kitchen-navigation){animation-duration:.2s}
+html[data-scene-transition=forest]::view-transition-new(root){animation:forest-arrival .65s var(--ease) both}
+html[data-scene-transition=csgo]::view-transition-new(root){animation:csgo-arrival .6s var(--ease) both}
+html[data-scene-transition=delta]::view-transition-new(root){animation:delta-arrival .5s var(--ease) both}
+html[data-scene-transition=pubg]::view-transition-new(root){animation:pubg-arrival .6s var(--ease) both}
+html[data-scene-transition=apex]::view-transition-new(root){animation:apex-arrival .55s var(--ease) both}
+html[data-scene-transition=elden]::view-transition-new(root){animation:elden-arrival .75s ease-out both}
+html[data-scene-transition=palworld]::view-transition-new(root){animation:pal-arrival .55s var(--ease) both}
+@keyframes forest-arrival{from{opacity:0;filter:blur(7px);transform:scale(1.025)}to{opacity:1;filter:blur(0);transform:none}}
+@keyframes csgo-arrival{from{clip-path:circle(0 at 22% 56%);opacity:.6}to{clip-path:circle(150% at 22% 56%);opacity:1}}
+@keyframes delta-arrival{from{clip-path:inset(0 100% 0 0);transform:translateX(20px)}to{clip-path:inset(0);transform:none}}
+@keyframes pubg-arrival{from{opacity:0;transform:perspective(1000px) rotateX(4deg) scale(.97);transform-origin:50% 100%}to{opacity:1;transform:none}}
+@keyframes apex-arrival{from{opacity:0;transform:translateX(7%) skewX(-5deg);clip-path:inset(0 0 0 35%)}to{opacity:1;transform:none;clip-path:inset(0)}}
+@keyframes elden-arrival{from{opacity:0;filter:sepia(.7) blur(3px);transform:scale(1.04)}to{opacity:1;filter:none;transform:none}}
+@keyframes pal-arrival{from{opacity:0;transform:translateY(25px) scale(.98)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root),::view-transition-old(kitchen-navigation),::view-transition-new(kitchen-navigation){animation:none!important}}

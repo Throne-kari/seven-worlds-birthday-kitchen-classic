@@ -1,0 +1,17 @@
+node_modules/
+.npm-cache/
+test-results/
+playwright-report/
+.DS_Store
+dist/
+research/
+.transfer/
+deliverables/
+.env
+.env.*
+qa/*
+!qa/QA_REPORT.md
+docs/*
+!docs/ASSETS.md
+!docs/GITHUB_DEPLOY.md
+!docs/CONTENT_NOTES.md

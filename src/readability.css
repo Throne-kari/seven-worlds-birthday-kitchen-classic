@@ -1,0 +1,28 @@
+/* Secondary recipe information remains readable at every viewport size. */
+dialog .ingredient-copy>span[lang=en],dialog .ingredient-note{font-size:13px;color:#626d55}
+dialog .recipe-header .fine-print,dialog .ingredient-panel .fine-print,dialog .portion-note,dialog .allergen-note,dialog .method-step>.safety-note,dialog .recipe-details .sources li,dialog .sources li p,dialog .recipe-details li span,dialog .shopping-note,dialog .timer-hint{font-size:13px;line-height:1.85}
+dialog .step-facts,dialog .time-chip{font-size:12px}
+dialog .step-ingredients>span{font-size:12px;line-height:1.75}
+dialog .recipe-time,dialog .recipe-time>span:last-child{font-size:13px;line-height:1.8}
+dialog .shopping-row small{font-size:12px}
+dialog .cooking-rail nav button{font-size:12px}
+dialog .cooking-rail>p{font-size:12px}
+dialog .doneness b{font-size:12px}
+@media(max-width:480px){dialog .timer-hint{margin-left:0}.catalogue-heading p{font-size:12px}.hero-description,.palworld-heading .hero-description{font-size:15px}.world-nav button span{font-size:11px}}
+dialog{--muted:#5c644f}
+dialog .english-title,dialog .recipe-time,dialog .recipe-header .fine-print,dialog .ingredient-panel .fine-print,dialog .timer-hint,dialog .muted,dialog .ingredient-group{color:#5f654c}
+dialog .time-chip{color:#5f4d2c}
+dialog .recipe-details li span,dialog .sources li p,dialog .ingredient-note,dialog .ingredient-copy>span[lang=en]{color:#5d684f}
+dialog .doneness p,dialog .doneness b,dialog .safety-note{color:#5c6845}
+dialog .utility-lead,dialog .shopping-row small,dialog .shopping-progress,dialog .settings-row small,dialog .cooking-rail>p{color:#5e6b4e}
+dialog .step-complete{color:#4e6539!important}
+dialog .step-ingredients>span,dialog .step-ingredients>small,dialog .cooking-navigation>span,dialog .storage-grid dt,dialog .plan-dish .text-button{color:#5b6748}
+dialog .cooking-rail nav button,dialog .cooking-rail nav button span,dialog .cooking-rail>.text-button{color:#576440}
+[data-theme=palworld] .recipe-order{color:#345f47}
+input[type=search]::-webkit-search-cancel-button{display:none}
+dialog .shopping-group{color:#705627}
+dialog .shopping-row b{color:#51643d}
+dialog .shopping-row:has(input:checked){opacity:1;background:#cdd8bc22}
+dialog .shopping-row:has(input:checked) strong,dialog .ingredient-row:has(input:checked) .ingredient-copy strong{color:#5e6a4d}
+dialog .ingredient-row:has(input:checked) .ingredient-amount{opacity:1;color:#596745}
+.site-footer,.site-footer p{font-size:12px}

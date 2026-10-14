@@ -1,0 +1,19 @@
+{
+  "name": "seven-worlds-kitchen-classic",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5176",
+    "build": "node scripts/validate-recipes.mjs && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4187",
+    "test": "node --test --test-isolation=none tests/domain.test.mjs",
+    "test:browser": "playwright test",
+    "validate:data": "node scripts/validate-recipes.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.64.1",
+    "vite": "^8.3.4"
+  }
+}
